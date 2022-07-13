@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import "./header.css";
 import Sidebar from '../Components/Sidebar';
+import Header from '../Components/Header';
 
 import { Container, Row, Col, Button } from 'react-bootstrap';
+
+
 
 function Theme() {
   const [results, setResult] = useState([]);
@@ -29,6 +32,7 @@ function Theme() {
 
   return (
     <div className="Theme">
+      <Header />
       <Container className="container">
         <Row>
           <Col className="col" sm={3}>
@@ -57,6 +61,7 @@ function Theme() {
       </Container>
     </div>
   );
+  
 }
 
 export default Theme;
